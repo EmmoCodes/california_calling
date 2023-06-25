@@ -271,6 +271,7 @@ header h1 span {
 .stuck__middle div:nth-of-type(1) {
   left: 65%;
   top: -5%;
+  z-index: 2;
 }
 .stuck__middle div:nth-of-type(2) {
   left: 5%;
@@ -373,7 +374,7 @@ footer .flex {
 
 .banderole {
   background-color: #fff;
-  line-height: 5rem;
+  line-height: 4rem;
   padding-block: 2rem;
   transform: rotate(45deg);
   margin-left: auto;
