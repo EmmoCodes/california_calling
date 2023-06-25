@@ -1,0 +1,179 @@
+@use './generals';
+@use './mixins';
+@use './resets';
+@use './variables';
+
+header {
+  padding-inline: variables.$base;
+  padding-bottom: variables.$base;
+
+  article:nth-of-type(2) {
+    margin-bottom: 8rem;
+  }
+
+  h1 {
+    color: variables.$light;
+    line-height: 70px;
+
+    span {
+      color: variables.$dark;
+      -webkit-text-stroke: 2px;
+      -webkit-text-stroke-color: variables.$light;
+    }
+  }
+}
+
+.last__year {
+  article {
+    max-width: 70vw;
+
+    article {
+      margin-top: variables.$small;
+    }
+  }
+
+  .map {
+    top: 700px;
+    left: 680px;
+    z-index: -1;
+  }
+
+  div {
+    margin-bottom: variables.$small;
+  }
+}
+
+.stuck__middle {
+  div:nth-of-type(1) {
+    left: 65%;
+    top: -5%;
+  }
+
+  div:nth-of-type(2) {
+    left: 5%;
+    top: 15%;
+  }
+
+  div:nth-of-type(3) {
+    right: 0;
+    top: 35%;
+  }
+
+  div:nth-of-type(4) {
+    left: 20%;
+    top: 50%;
+  }
+
+  div:nth-of-type(5) {
+    left: 60%;
+    top: 55%;
+  }
+
+  div:nth-of-type(6) {
+    left: 0;
+    top: 70%;
+  }
+
+  div:nth-of-type(7) {
+    left: 60%;
+    bottom: -3%;
+    z-index: 1;
+  }
+
+  article:nth-of-type(1) {
+    max-width: 30rem;
+    text-align: left;
+    padding-top: 25rem;
+    padding-bottom: 45rem;
+
+    h2 {
+      line-height: 5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+
+  article:nth-of-type(2) {
+    max-width: 30rem;
+    text-align: left;
+    padding-bottom: 15rem;
+  }
+}
+
+.golden__bear {
+  min-height: 190vh;
+  .absolute__container {
+    top: 60%;
+    left: 15%;
+  }
+  .absolute__container:nth-of-type(2) {
+    left: 60%;
+    top: 70%;
+  }
+}
+
+.poppy__bear {
+  min-height: 180vh;
+  overflow: hidden;
+  .calli__stamp {
+    top: -7.5rem;
+    right: -9rem;
+  }
+
+  .absolute__container:nth-of-type(2) {
+    top: 40%;
+    right: 15%;
+  }
+  .absolute__container:nth-of-type(3) {
+    top: 50%;
+    left: 15%;
+  }
+}
+
+footer {
+  overflow: hidden;
+  article {
+    max-width: 31.5rem;
+    line-height: 2rem;
+
+    a:nth-of-type(1) {
+      line-height: 5rem;
+    }
+
+    .font__m {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .social {
+    margin-top: 70px;
+  }
+
+  .flexcolumn {
+    max-width: 200px;
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .flex {
+    max-width: 200px;
+    height: 50px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: 8rem;
+  }
+}
+
+.banderole {
+  background-color: variables.$light;
+  line-height: 5rem;
+  padding-block: 2rem;
+  transform: rotate(45deg);
+  margin-left: auto;
+
+  span {
+    display: inline-block;
+    color: variables.$light;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: variables.$dark;
+  }
+}

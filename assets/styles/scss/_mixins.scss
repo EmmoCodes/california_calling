@@ -1,0 +1,22 @@
+@mixin auto-grid($width) {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax($width, 1fr));
+}
+
+@mixin mediaquery($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}

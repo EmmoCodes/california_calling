@@ -1,0 +1,163 @@
+@use './variables';
+@use './mixins';
+
+@font-face {
+  font-family: 'WorkSans';
+  src: url('../../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../../fonts/Lora/Lora-VariableFont_wght.ttf');
+}
+
+body {
+  font-family: variables.$basefont;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  font-family: variables.$sidefont;
+}
+
+h1 {
+  font-size: variables.$headlinexl;
+}
+
+h2 {
+  font-size: variables.$headlinexl;
+}
+
+p {
+  font-size: variables.$textstrd;
+  font-weight: 600;
+}
+
+.font__s {
+  line-height: 2rem;
+  font-family: variables.$sidefont;
+  font-weight: 600;
+}
+
+.font__m {
+  font-size: variables.$texts;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.font__l {
+  font-size: variables.$headlinel;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.font__xl {
+  font-size: variables.$headlinexl;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.white {
+  color: variables.$light;
+}
+
+.black {
+  background-color: variables.$dark;
+}
+
+.relative__container {
+  position: relative;
+}
+
+.absolute__container {
+  position: absolute;
+}
+
+.flex {
+  @include mixins.flex;
+}
+
+.flexcolumn {
+  @include mixins.flexcolumn;
+  text-align: center;
+  gap: 30px;
+}
+
+span {
+  display: block;
+}
+
+.vl {
+  border-left: 2px solid variables.$verticalline;
+  height: 200px;
+  margin: 0 auto;
+  width: 2px;
+  margin-bottom: variables.$base;
+}
+
+section {
+  padding: variables.$base;
+}
+
+.btn {
+  border: 1px solid variables.$light;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.image__xs {
+  width: 15rem;
+  height: 10rem;
+}
+
+.image__s {
+  height: 12.5rem;
+  width: 18.75rem;
+}
+
+.image__m {
+  width: 22.5rem;
+  height: 29rem;
+}
+
+.image__xl {
+  height: 43rem;
+  width: 43rem;
+}
+
+.map {
+  height: 38rem;
+  width: 31rem;
+}
+
+.calli__stamp {
+  height: 30rem;
+  width: 30rem;
+  z-index: -1;
+}
+
+.bear {
+  padding-top: 15rem;
+  flex-wrap: wrap;
+
+  article:nth-of-type(1) {
+    line-height: 5rem;
+    max-width: 25rem;
+  }
+
+  article:nth-of-type(2) {
+    max-width: 31rem;
+    line-height: 2rem;
+
+    p:nth-of-type(1) {
+      padding-bottom: 1.5rem;
+    }
+  }
+}
+
+.social__logo {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
