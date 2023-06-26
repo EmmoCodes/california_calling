@@ -109,21 +109,38 @@ section {
 .image__xs {
   width: 15rem;
   height: 10rem;
+  @include mixins.mediaquery(414px) {
+    height: 10rem;
+    width: 7rem;
+  }
 }
 
 .image__s {
   height: 12.5rem;
   width: 18.75rem;
+  @include mixins.mediaquery(414px) {
+    height: 7rem;
+    width: 10rem;
+  }
 }
 
 .image__m {
   width: 22.5rem;
   height: 29rem;
+  @include mixins.mediaquery(414px) {
+    height: 15rem;
+    width: 20rem;
+  }
 }
 
 .image__xl {
   height: 43rem;
   width: 43rem;
+
+  @include mixins.mediaquery(414px) {
+    height: 25rem;
+    width: 25rem;
+  }
 }
 
 .map {
@@ -149,6 +166,7 @@ section {
   article:nth-of-type(2) {
     max-width: 31rem;
     line-height: 2rem;
+    margin-top: 5rem;
 
     p:nth-of-type(1) {
       padding-bottom: 1.5rem;
